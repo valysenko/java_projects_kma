@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="HibernateSessionFactory">
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <mapping class="com.lysenko.domain.Book"/>
+  <mapping class="com.lysenko.domain.User"/>
+  <mapping class="com.lysenko.domain.Role"/>
+  <mapping class="com.lysenko.domain.Order"/>
+ </session-factory>
+</hibernate-configuration>
